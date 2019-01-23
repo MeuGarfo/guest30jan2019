@@ -1,6 +1,5 @@
-[
-    "inc",
-    "view",
-    "root",
-    "error"
-]
+{
+    "0": "inc",
+    "1": "view",
+    "3": "error"
+}

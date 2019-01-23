@@ -1,8 +1,5 @@
 <?php
-//requires
-require 'basic/getbasic/root/root.php';
-root();
-require 'basic/getbasic/inc/inc.php';
+require '../basic/basic.php';
 inc([
     'error',
     'view'
