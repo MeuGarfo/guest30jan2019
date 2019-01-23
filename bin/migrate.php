@@ -7,5 +7,9 @@ inc([
 $cfg=require './config/db.php';
 createDB($cfg);
 $db=db($cfg);
-var_dump($db->info());
+if(migrate($db)){
+    print 'tabelas migradas com sucesso'.PHP_EOL;
+}else{
+    print 'erro ao migrar as tabelas'.PHP_EOL;
+}
 ?>

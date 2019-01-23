@@ -25,17 +25,9 @@ class Migration
             return false;
         }
     }
-    public function migrateAll($dir=false)
+    public function migrateAll()
     {
-        $defaultDir=ROOT.'table/';
-        if(!$dir){
-            $dir=$defadefaultDir;
-        }
-        if (file_exists($dir)) {
-            $dir=$dir;
-        } else {
-            $dir=$defadefaultDir;
-        }
+        $dir=ROOT.'table/';
         //le os nomes das tabelas
         $listaDeTabelas=$this->myScanDir($dir);
         $tables=null;
@@ -66,7 +58,7 @@ class Migration
                 }
             }
         }
-        if(count($tabelasNoBanco)>0){
+        if(is_array($tabelasNoBanco) && count($tabelasNoBanco)>0){
             //exclusão de colunas
             foreach ($tabelasNoBanco as $tableName) {
                 //le as colunas que já existe na tabela
