@@ -1,5 +1,5 @@
 # Funcionalidades (features)
-1. Gerar uma tabela com varchar(n)
+1. Gerar uma tabela para as mensagens
 2. Criar mensagens com no máximo 64 caracteres
 3. Exibir as mensagens em ordem DESC com links
 4. Botão para editar as mensagens
