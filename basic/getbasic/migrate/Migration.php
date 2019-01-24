@@ -130,6 +130,10 @@ class Migration
             $sql='ALTER TABLE `'.$tableName.'` ADD ';
             if ($columnName=='id') {
                 $sql=$sql.'`'.$columnName.'` serial;';
+            }elseif($columnName=='created_at'){
+                $sql=$sql.'`'.$columnName.'` TIMESTAMP DEFAULT CURRENT_TIMESTAMP;';
+            }elseif($columnName=='updated_at'){
+                $sql=$sql.'`'.$columnName.'` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;';
             } else {
                 $sql=$sql.'`'.$columnName.'` TEXT;';//65K chars
             }
