@@ -2,12 +2,11 @@
 require '../basic/basic.php';
 inc([
     'error',
-    'view'
+    'model',
+    'view',
+    'controller'
 ]);
 
 //code
 error(true);
-$data=[
-    'title'=>'Guest'
-];
-view('index',$data);
+controller('index');
