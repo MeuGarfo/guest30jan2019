@@ -8,3 +8,6 @@ view('message/form');
 ?>
 <br>
 </center>
+<?php
+var_dump($messages);
+ ?>

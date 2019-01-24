@@ -1,6 +1,9 @@
 <?php
+controller('message');
+$messages=allMessages();
 $data=[
-    'title'=>"Guest"    
+    'title'=>"Guest",
+    'messages'=>$messages
 ];
 view('index',$data);
 ?>
