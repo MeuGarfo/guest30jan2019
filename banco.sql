@@ -1,4 +1,4 @@
--- 2019-01-25T15:41:57-02:00 - mysql:dbname=guest;host=localhost
+-- 2019-01-25T15:44:51-02:00 - mysql:dbname=guest;host=localhost
 
 -- Table structure for table `messages`
 
@@ -9,13 +9,14 @@ CREATE TABLE `messages` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- Dumping data for table `messages`
 
 LOCK TABLES `messages` WRITE;
 INSERT INTO `messages` VALUES (1,'oi','2019-01-24 16:17:40','2019-01-24 16:17:40');
 INSERT INTO `messages` VALUES (2,'xau','2019-01-24 19:22:33','2019-01-24 19:22:33');
+INSERT INTO `messages` VALUES (3,'feliz pois essa joça funcionou =)','2019-01-25 15:44:27','2019-01-25 15:44:27');
 UNLOCK TABLES;
 
--- Completed on: 2019-01-25T15:41:57-02:00
+-- Completed on: 2019-01-25T15:44:51-02:00
