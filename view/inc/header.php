@@ -10,9 +10,9 @@
     }
     body{
         font-family:sans;
-        font-size:0.90em;
+        font-size:1em;
         margin:0 auto;
-        width:1024px;
+        width:640px;
     }
     button{
         cursor:pointer;
